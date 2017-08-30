@@ -21,7 +21,7 @@ class BlogController extends Controller
     public function readAction($title)
     {
         return new Response(
-            '<html><body>Showing post:'.$title.'</body></html>'
+            '<html><body>Mostrando post:'.$title.'</body></html>'
         );
     }
 }
