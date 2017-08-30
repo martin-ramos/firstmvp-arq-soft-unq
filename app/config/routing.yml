@@ -1,0 +1,18 @@
+# app/config/routing.yml
+#
+# Estas lineas definen el comportamiento
+# estandar de leer la rutas de las anotaciones del código
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+# Al definir las rutas en los controladores estas rutas son innecesarias, no utilizar
+blog_list:
+    path:      /blog/{page}
+    defaults:  { _controller: AppBundle:Blog:list, page: 1 }
+    requirements:
+        page: '\d+'
+blog_read:
+    path:      /blog/{title}
+    defaults:  { _controller: AppBundle:Blog:read  }
+    requirements:
+        title: '\S+'
