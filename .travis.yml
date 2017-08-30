@@ -1,0 +1,15 @@
+language: php
+php:
+  - '5.5'
+  - '5.6'
+  - '7.0'
+  - hhvm
+  - nightly
+
+  
+deploy:
+  provider: heroku
+  api_key: fb0a7462-9985-4979-a5e6-ccfc799d1d16
+  app: quiet-falls-13166
+
+before_script: composer install
