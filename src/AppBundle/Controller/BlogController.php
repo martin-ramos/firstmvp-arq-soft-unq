@@ -12,7 +12,7 @@ class BlogController extends Controller
     public function listAction($page=1)
     {
         return new Response(
-            '<html><body>Lea GAY page number: '.$page.'</body></html>'
+            '<html><body>Lea y Nacho page number: '.$page.'</body></html>'
         );
     }
     /**
